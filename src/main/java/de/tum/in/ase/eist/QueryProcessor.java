@@ -25,7 +25,7 @@ public class QueryProcessor {
                         "and departments, and supported by numerous " + "research centers.";
             }
             if (query.toLowerCase().contains("name")) {
-                return "michael";
+                return "my name is michael";
             }
             if (query.toLowerCase().contains("largest")) {
                 String[] split = query.split(":");
@@ -53,7 +53,9 @@ public class QueryProcessor {
                     return coube == (long) coube;
                 }).map(Object::toString).collect(Collectors.joining(","));
             }
-            return "";
+            else {
+                return "";
+            }
         } catch (Exception e) {
             return "";
         }
