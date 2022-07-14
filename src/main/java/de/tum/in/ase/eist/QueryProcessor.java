@@ -25,7 +25,7 @@ public class QueryProcessor {
                         "and departments, and supported by numerous " + "research centers.";
             }
             if (query.toLowerCase().contains("name")) {
-                return "Tutor";
+                return "TutorExample";
             }
             if (query.toLowerCase().contains("largest")) {
                 String[] split = query.split(":");
