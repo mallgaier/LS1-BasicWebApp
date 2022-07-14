@@ -25,7 +25,7 @@ public class AnswerResource {
 	public ResponseEntity<String> answer(@RequestParam("q") String query) {
 		logger.info("Received query \"{}\"", query);
 		String answer = queryProcessor.process(query);
-		logger.info("Sended answer: |" + answer);
+		logger.info("Sended answer \"{}\"", answer);
 		return ResponseEntity.ok(answer);
 	}
 
